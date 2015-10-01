@@ -17,13 +17,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        request(.GET, "https://github.com/tonyli508/ForkmanForSwiftPodsWithIOS7/blob/master/README.md").responseString(encoding: NSUTF8StringEncoding) { [unowned self] (request, response, resultText, error) -> Void in
+        request(.GET, "https://github.com/tonyli508/ForkmanForSwiftPodsWithIOS7/blob/master/README.md").responseString(encoding: NSUTF8StringEncoding) { [unowned self] (request, response, result) -> Void in
             
-            if error != nil {
-                self.textView.text = error?.localizedDescription
-            } else {
-                self.textView.text = resultText
-            }
+            self.textView.text = result.value
             
         }
     }

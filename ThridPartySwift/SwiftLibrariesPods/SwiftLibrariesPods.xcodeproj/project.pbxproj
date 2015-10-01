@@ -26,19 +26,19 @@
 			remoteGlobalIDString = 099CF2614D741D7724960A47;
 			remoteInfo = "Pods-SwiftLibrariesPods";
 		};
-		1042BFF71BB9C14E00511E8A /* PBXContainerItemProxy */ = {
+		1063C1761BBD361400C02100 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1066AC071BB9C0D400A79C4D /* Pods.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 53230318894B7D79C4ECE405;
-			remoteInfo = "Pods-SwiftLibrariesPods-AlamofireDomain";
+			remoteGlobalIDString = 066A0E5A3284F8A43F30CAB95BD7EE62;
+			remoteInfo = Alamofire;
 		};
-		1042BFF91BB9C14E00511E8A /* PBXContainerItemProxy */ = {
+		1063C1781BBD361400C02100 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1066AC071BB9C0D400A79C4D /* Pods.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 9BD32652704E6F20B5E50C8A;
-			remoteInfo = "Pods-SwiftLibrariesPods-SwiftyJSON";
+			remoteGlobalIDString = EB4CB50B42FA0112BD3CB968CB68AC93;
+			remoteInfo = SwiftyJSON;
 		};
 		1066ABF31BB9BFF300A79C4D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -64,7 +64,7 @@
 		1066ABF81BB9BFF400A79C4D /* SwiftLibrariesPodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLibrariesPodsTests.swift; sourceTree = "<group>"; };
 		1066AC071BB9C0D400A79C4D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
 		139732803D3F1FA0B6B582CB /* Pods_SwiftLibrariesPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLibrariesPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2FC6ADFB8859AADC1BF9693 /* Pods-SwiftLibrariesPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLibrariesPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLibrariesPods/Pods-SwiftLibrariesPods.release.xcconfig"; sourceTree = "<group>"; };
+		3F0C425C34C666CCD516434F /* Pods-SwiftLibrariesPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLibrariesPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLibrariesPods/Pods-SwiftLibrariesPods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				1066AC071BB9C0D400A79C4D /* Pods.xcodeproj */,
-				F2FC6ADFB8859AADC1BF9693 /* Pods-SwiftLibrariesPods.release.xcconfig */,
+				3F0C425C34C666CCD516434F /* Pods-SwiftLibrariesPods.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -158,9 +158,9 @@
 		1066AC081BB9C0D400A79C4D /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				1063C1771BBD361400C02100 /* Alamofire.framework */,
 				1042BFF61BB9C14E00511E8A /* Pods_SwiftLibrariesPods.framework */,
-				1042BFF81BB9C14E00511E8A /* AlamofireDomain.framework */,
-				1042BFFA1BB9C14E00511E8A /* SwiftyJSON.framework */,
+				1063C1791BBD361400C02100 /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +220,7 @@
 		1066ABD51BB9BFF300A79C4D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Carma;
 				TargetAttributes = {
@@ -265,18 +266,18 @@
 			remoteRef = 1042BFF51BB9C14E00511E8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1042BFF81BB9C14E00511E8A /* AlamofireDomain.framework */ = {
+		1063C1771BBD361400C02100 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = AlamofireDomain.framework;
-			remoteRef = 1042BFF71BB9C14E00511E8A /* PBXContainerItemProxy */;
+			path = Alamofire.framework;
+			remoteRef = 1063C1761BBD361400C02100 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1042BFFA1BB9C14E00511E8A /* SwiftyJSON.framework */ = {
+		1063C1791BBD361400C02100 /* SwiftyJSON.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SwiftyJSON.framework;
-			remoteRef = 1042BFF91BB9C14E00511E8A /* PBXContainerItemProxy */;
+			remoteRef = 1063C1781BBD361400C02100 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -492,7 +493,7 @@
 		};
 		1066ABFE1BB9BFF400A79C4D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2FC6ADFB8859AADC1BF9693 /* Pods-SwiftLibrariesPods.release.xcconfig */;
+			baseConfigurationReference = 3F0C425C34C666CCD516434F /* Pods-SwiftLibrariesPods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftLibrariesPods/Info.plist;

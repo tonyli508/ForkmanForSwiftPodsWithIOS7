@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## AlamofireDomain
+## Alamofire
 
 Copyright (c) 2014–2015 Alamofire Software Foundation (http://alamofire.org/)
 
